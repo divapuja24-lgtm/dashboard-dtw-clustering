@@ -6,9 +6,11 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from author import show_author
 
 BASE = Path(__file__).parent
 st.set_page_config(page_title="Clustering Time Series DTW", page_icon="📈", layout="wide")
+show_author()
 
 PAL = px.colors.qualitative.Bold
 METRIC_LABEL = {"silhouette": "Silhouette (↑)", "chi": "Calinski-Harabasz (↑)", "dbi": "Davies-Bouldin (↓)", "balance": "Balance score (↑)"}
